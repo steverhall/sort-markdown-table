@@ -1,0 +1,12 @@
+name: 'Sort Markdown Table'
+description: 'Sorts markdown tables tagged with <!-- sorted -->'
+inputs:
+  file-name: 
+    description: 'Files to process (filename, or "*.md")'
+    required: true
+    default: '*.md'
+runs:
+  using: "composite"
+  steps:
+    - run: sort-markdown-table.sh ${{ inputs.file-name }}
+      shell: bash
