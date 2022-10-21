@@ -40,6 +40,7 @@ BEGIN {
 					/* Reset for next table */
 					sorting = 0;
 					pastHeader = 0;
+					split("", arr);
 
 					/* Print line read but not part of table */
 					printf("%s\n", $0);

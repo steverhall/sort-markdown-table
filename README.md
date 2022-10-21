@@ -10,7 +10,7 @@ To sort markdown, a comment must be added before the table (it can be anywhere i
 
 ## Example
 
-```
+```markdown
 <!-- sorted -->
 | Italian   | English | Emoji |
 | --------- | ------- | --- |
